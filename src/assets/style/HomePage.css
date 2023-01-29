@@ -1,0 +1,102 @@
+.h1-header {
+  letter-spacing: 2px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: calc(20px + 1vmin);
+}
+
+.logo {
+  padding-top: 20px;
+  width: 120px;
+  height: 120px;
+}
+
+.search-box {
+  padding-top: 70px;
+}
+
+input {
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+}
+
+button {
+  padding: 10px;
+  letter-spacing: 1.5px;
+  color: black;
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(216, 207, 207);
+}
+.button-check {
+  padding-top: 20px;
+}
+
+.date {
+  padding-top: 50px;
+  font-size: 20px;
+  letter-spacing: 0.7px;
+}
+
+.p-city {
+  font-size: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  letter-spacing: 0.7px;
+}
+
+.p-temperature {
+  font-size: 34px;
+  padding-bottom: 20px;
+  letter-spacing: 0.7px;
+}
+
+.p-weather {
+  font-size: 18px;
+  letter-spacing: 0.7px;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+}
+
+.pressure {
+  padding-left: 80px;
+  letter-spacing: 1px;
+  font-size: 21px;
+}
+
+.wind {
+  letter-spacing: 1px;
+  font-size: 21px;
+}
+
+.mini-text {
+  font-size: 17px;
+  letter-spacing: 0.7px;
+  padding-bottom: 3px;
+}
+
+.high-low {
+  padding-top: 20px;
+  font-size: 21px;
+  padding-bottom: 20px;
+}
+
+.block-sunrise {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  font-size: 21px;
+}
