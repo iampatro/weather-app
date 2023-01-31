@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   WiBarometer,
   WiStrongWind,
@@ -19,6 +19,17 @@ const HomePage = () => {
   const [weather, setWeather] = useState("");
   const [query, setQuery] = useState("");
 
+  useEffect(() => {
+    const savedWeather = JSON.parse(localStorage.getItem("weather"));
+    if (savedWeather) {
+      setWeather(savedWeather);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("weather", JSON.stringify(weather));
+  }, [weather]);
+
   const searchLocation = (event) => {
     if (event.key === "Enter") {
       axios
@@ -37,6 +48,7 @@ const HomePage = () => {
             sunrise: response.data.sys.sunrise,
             sunset: response.data.sys.sunset,
           });
+          localStorage.setItem("weatherData", JSON.stringify(weather));
           // console.log(response);
           setQuery("");
         });
